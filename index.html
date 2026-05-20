@@ -1,9 +1,91 @@
-<div style="position: relative; width: 100%; height: 0; padding-top: 112.4451%;
- padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
- border-radius: 8px; will-change: transform;">
-  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
-    src="https://www.canva.com/design/DAHKNT42ryQ/nQ3C67OmAmQDlNX5z8Kp2Q/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
-  </iframe>
-</div>
-<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAHKNT42ryQ&#x2F;nQ3C67OmAmQDlNX5z8Kp2Q&#x2F;view?utm_content=DAHKNT42ryQ&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">нове бачення</a> від користувача Trade Cosmetic
-<a href="https://secure.wayforpay.com/button/b79bde77d66b7" target="_blank" style="position: fixed; bottom: 30px; left: 50%; transform: translateX(-50%); background: #bc9c82; color: #ffffff; padding: 16px 35px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 16px; font-weight: bold; text-decoration: none; border-radius: 50px; box-shadow: 0 6px 20px rgba(0,0,0,0.3); z-index: 999999; text-transform: uppercase; letter-spacing: 1px; white-space: nowrap;">Зареєструватись на подію</a>
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ревізія — Лендинг</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow-x: hidden;
+            background-color: #ffffff;
+            position: relative;
+        }
+        
+        /* Контейнер для сайту з Канви */
+        .canva-wrapper {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-top: 112.4451%;
+            padding-bottom: 60px; /* Місце знизу для другої кнопки */
+            overflow: hidden;
+        }
+        
+        iframe {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            border: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        /* 1. НЕВИДИМА ЗОНА ПОВЕРХ ВЕЛИКОЇ КНОПКИ З КАНВИ */
+        .invisible-clickable-link {
+            position: absolute;
+            top: 36%; 
+            left: 5%;
+            width: 90%;
+            height: 12%;
+            background: transparent;
+            z-index: 9999;
+            cursor: pointer;
+            text-decoration: none;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        /* 2. НАША НИЖНЯ ДОДАТКОВА РОЖЕВА КНОПКА */
+        .floating-pink-button {
+            position: fixed;
+            bottom: 25px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #b84a5a; /* Гарний рожево-бордовий колір під тон сайту */
+            color: #ffffff;
+            padding: 14px 35px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-size: 15px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+            z-index: 999999;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            white-space: nowrap;
+            transition: background-color 0.2s;
+        }
+        
+        .floating-pink-button:active {
+            background-color: #9c3b49;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="canva-wrapper">
+        <iframe loading="lazy" src="https://www.canva.com/design/DAHKNT42ryQ/nQ3C670mAmQDlNX5z8Kp2Q/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen"></iframe>
+        
+        <a href="ТВОЄ_ПОСИЛАННЯ_НА_ОПЛАТУ" target="_blank" class="invisible-clickable-link"></a>
+    </div>
+
+    <a href="https://secure.wayforpay.com/button/b79bde77d66b7" target="_blank" class="floating-pink-button">Зареєструватись на подію</a>
+
+</body>
+</html>
