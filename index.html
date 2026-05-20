@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="uk">
 <head>
@@ -15,13 +16,12 @@
             position: relative;
         }
         
-        /* Контейнер для сайту з Канви */
         .canva-wrapper {
             position: relative;
             width: 100%;
             height: 0;
             padding-top: 112.4451%;
-            padding-bottom: 60px; /* Місце знизу для другої кнопки */
+            padding-bottom: 80px;
             overflow: hidden;
         }
         
@@ -36,7 +36,7 @@
             margin: 0;
         }
 
-        /* 1. НЕВИДИМА ЗОНА ПОВЕРХ ВЕЛИКОЇ КНОПКИ З КАНВИ */
+        /* Невидима зона поверх великої рожевої кнопки з Канви */
         .invisible-clickable-link {
             position: absolute;
             top: 36%; 
@@ -50,13 +50,13 @@
             -webkit-tap-highlight-color: transparent;
         }
 
-        /* 2. НАША НИЖНЯ ДОДАТКОВА РОЖЕВА КНОПКА */
+        /* Нижня додаткова рожева кнопка */
         .floating-pink-button {
             position: fixed;
             bottom: 25px;
             left: 50%;
             transform: translateX(-50%);
-            background-color: #b84a5a; /* Гарний рожево-бордовий колір під тон сайту */
+            background-color: #b84a5a;
             color: #ffffff;
             padding: 14px 35px;
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -82,10 +82,10 @@
     <div class="canva-wrapper">
         <iframe loading="lazy" src="https://www.canva.com/design/DAHKNT42ryQ/nQ3C670mAmQDlNX5z8Kp2Q/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen"></iframe>
         
-        <a href="ТВОЄ_ПОСИЛАННЯ_НА_ОПЛАТУ" target="_blank" class="invisible-clickable-link"></a>
+        <a href="https://secure.wayforpay.com/button/b79bde7d466b7" target="_blank" class="invisible-clickable-link"></a>
     </div>
 
-    <a href="https://secure.wayforpay.com/button/b79bde77d66b7" target="_blank" class="floating-pink-button">Зареєструватись на подію</a>
+    <a href="https://secure.wayforpay.com/button/b79bde7d466b7" target="_blank" class="floating-pink-button">Зареєструватись на подію</a>
 
 </body>
 </html>
